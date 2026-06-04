@@ -170,6 +170,37 @@ The models were evaluated using:
 
 ---
 
+## Model Performance Comparison
+
+Three machine learning models were trained and evaluated for customer churn prediction.
+
+| Model | Accuracy | Precision (Churn) | Recall (Churn) | F1-Score (Churn) |
+|---------|---------|---------|---------|---------|
+| Logistic Regression | 80% | 0.63 | 0.61 | 0.62 |
+| Random Forest | 82% | 0.71 | 0.60 | 0.65 |
+| XGBoost | 82% | 0.70 | 0.61 | 0.65 |
+
+### Detailed Results
+
+| Model | Accuracy | Macro Avg F1 | Weighted Avg F1 |
+|---------|---------|---------|---------|
+| Logistic Regression | 0.80 | 0.74 | 0.80 |
+| Random Forest | 0.82 | 0.77 | 0.82 |
+| XGBoost | 0.82 | 0.76 | 0.82 |
+
+### Key Findings
+
+- Logistic Regression provided a strong baseline with **80% accuracy**.
+- Random Forest achieved the **highest precision (71%)** for identifying churned customers.
+- XGBoost achieved performance comparable to Random Forest while maintaining strong generalization.
+- Both Random Forest and XGBoost outperformed Logistic Regression in overall predictive performance.
+- Random Forest was selected as the final model due to its higher precision and balanced performance on churn prediction.
+
+### Business Interpretation
+
+The model can correctly identify a significant portion of customers likely to churn, enabling proactive retention campaigns and reducing customer attrition.
+
+
 ## Technologies Used
 
 ### Programming Language
