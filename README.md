@@ -206,6 +206,7 @@ The model can correctly identify a significant portion of customers likely to ch
 ### Programming Language
 
 * Python
+* Sql
 
 ### Libraries
 
